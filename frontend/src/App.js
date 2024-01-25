@@ -1,13 +1,16 @@
+import { Routes, Route } from 'react-router-dom'; 
 import './App.css';
+import Home from './components/home/Home';
+import Header from './components/header/Header';
 
 function App() {
-  const title='SVA Electricals';
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>{title}</p>
-      </header>
-    </div>
+      <div className="App">
+        <Header></Header>
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>
+        </Routes>
+      </div>
   );
 }
 
