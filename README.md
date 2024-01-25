@@ -1,1 +1,1 @@
-# sva_electricals
+# sva_electricals inventory
